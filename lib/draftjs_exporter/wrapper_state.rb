@@ -19,6 +19,7 @@ module DraftjsExporter
     end
 
     def to_html(options = {})
+      options.merge!(encoding: 'UTF-8')
       fragment.to_html(options)
     end
 
